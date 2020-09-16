@@ -36,7 +36,7 @@ class ValidateFileNameUpload
         if($checkNameFile) {
             return $next($request);
         }
-        return redirect()->back()->withErrors(['token' => 'File upload có định dạng không phù hợp']);
+        return redirect()->back()->withErrors(['token' => config('validate.messages.validate_name_file')]);
     }
 
     private function validateNameFile ($nameFile)

@@ -23,9 +23,15 @@ class ValidateNameFileProvider extends ServiceProvider
         );
         /** @var Router $router */
         $router = $this->app['router'];
-        $router->pushMiddlewareToGroup('web', ValidateFileNameUpload::class);
-        $router->pushMiddlewareToGroup('web', ValidatorHtmlInjection::class);
-        $router->pushMiddlewareToGroup('web', ValidatorStringInput::class);
+        if(config('validate.handle_validate.name_file')) {
+            $router->pushMiddlewareToGroup('web', ValidateFileNameUpload::class);
+        }
+        if(config('validate.handle_validate.name_file')) {
+            $router->pushMiddlewareToGroup('web', ValidatorHtmlInjection::class);
+        }
+        if(config('validate.handle_validate.name_file')) {
+            $router->pushMiddlewareToGroup('web', ValidatorStringInput::class);
+        }
     }
 
     public function boot()

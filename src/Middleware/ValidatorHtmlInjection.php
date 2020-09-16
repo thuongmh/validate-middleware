@@ -28,7 +28,7 @@ class ValidatorHtmlInjection
             try {
                 preg_match_all(config('validate.regex_html'), $value, $matches, PREG_SET_ORDER, 0);
                 if(count($matches) > 0) {
-                    return redirect()->back()->withErrors(['token' => __(('validation.html_injection'))]);
+                    return redirect()->back()->withErrors(['token' => config('validate.messages.validate_input_html')]);
                 }
             } catch (\Exception $e) {
                 continue;

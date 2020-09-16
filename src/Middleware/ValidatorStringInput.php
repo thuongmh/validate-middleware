@@ -25,7 +25,7 @@ class ValidatorStringInput
             try {
                 if(is_string($value)) {
                     if(in_array(substr($value, 0, 1),  config('validate.ARRAY_REPLACE'))) {
-                        return redirect()->back()->withErrors(['token' => __(('validation.spacial_characters'))]);
+                        return redirect()->back()->withErrors(['token' => config('validate.messages.validate_input')]);
                     }
                 }
             } catch (\Exception $e) {
