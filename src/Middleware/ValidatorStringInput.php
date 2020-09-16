@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace thuongmh\ValidateNameFile\Middleware;
 
 use Closure;
 
