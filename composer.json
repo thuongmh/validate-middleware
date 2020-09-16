@@ -1,0 +1,16 @@
+{
+    "name": "thuongmh/validate-name-file",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mai Huy Thuong",
+            "email": "thuongmaihuy.demo@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "thuongmh\\validateNameFile\\": "src/"
+        }
+    }
+}
