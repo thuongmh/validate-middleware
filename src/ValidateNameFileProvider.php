@@ -1,12 +1,12 @@
 <?php
 
-namespace thuongmh\validateNameFile;
+namespace TH\MiddlewareValidate;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
-use thuongmh\validateNameFile\Middleware\ValidateFileNameUpload;
-use thuongmh\validateNameFile\Middleware\ValidatorHtmlInjection;
-use thuongmh\validateNameFile\Middleware\ValidatorStringInput;
+use TH\MiddlewareValidate\Middleware\ValidateFileNameUpload;
+use TH\MiddlewareValidate\Middleware\ValidatorHtmlInjection;
+use TH\MiddlewareValidate\Middleware\ValidatorStringInput;
 
 class ValidateNameFileProvider extends ServiceProvider
 {
