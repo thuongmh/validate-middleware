@@ -26,10 +26,10 @@ class ValidateNameFileProvider extends ServiceProvider
         if(config('validate.handle_validate.name_file')) {
             $router->pushMiddlewareToGroup('web', ValidateFileNameUpload::class);
         }
-        if(config('validate.handle_validate.name_file')) {
+        if(config('validate.handle_validate.input_html')) {
             $router->pushMiddlewareToGroup('web', ValidatorHtmlInjection::class);
         }
-        if(config('validate.handle_validate.name_file')) {
+        if(config('validate.handle_validate.input_string')) {
             $router->pushMiddlewareToGroup('web', ValidatorStringInput::class);
         }
     }
