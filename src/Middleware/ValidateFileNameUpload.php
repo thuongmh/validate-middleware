@@ -18,6 +18,7 @@ class ValidateFileNameUpload
         if($request->isMethod('get')) {
             return $next($request);
         }
+        $checkNameFile = true;
         foreach ($request->only(config('validate.list_file_name')) as $value) {
             if(is_array($value)) {
                 foreach ($value as $item) {
