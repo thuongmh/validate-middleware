@@ -19,7 +19,7 @@ class ValidateNameFileProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(
             __DIR__.'/../config/validate.php',
-            'permission'
+            'config'
         );
         /** @var Router $router */
         $router = $this->app['router'];
