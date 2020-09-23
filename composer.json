@@ -12,5 +12,12 @@
         "psr-4": {
             "TH\\MiddlewareValidate\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TH\\MiddlewareValidate\\ValidateNameFileProvider"
+            ]
+        }
     }
 }
